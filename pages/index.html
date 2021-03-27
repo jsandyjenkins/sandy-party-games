@@ -14,8 +14,26 @@
  </head>
  <body>
     <h1>Under Construction</h1>
-    <P>
+    <p>
       <a href="/game.html">Game</a>
-    </P>
+    </p>
+
+    <p>
+      <canvas id="canvas" onmousemove="paint(event)" onmousedown="brushDown()" onmouseup ="brushUp()"></canvas>
+    </p>
+
+    <button type="button" onclick="clearCanvas()">Clear</button>
+    
+
+    <p>
+      <canvas id="brushSelector" width="25" height="25"></canvas>
+      <input type="range" min="1" max="5" value="2" class="slider" id="brushSizeSelector">
+      <button type="button" onclick="brushSize()">Set Size</button>
+    </p>
+
+    <img src="images/arrow.png" hidden>
+
+    <script src="js/index.js"></script>
+
  </body>
 </html>
